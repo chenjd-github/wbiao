@@ -1,0 +1,354 @@
+
+    <style>
+		::-webkit-input-placeholder { 
+		  color: #dcdcdc;
+		  font-size: 11px; 
+		 }
+       
+		/*版心*/
+		.hl_con,.top-con,.nav-con{
+			width: 1204px;
+			margin:0 auto;
+		}
+		/*Tbanner*/
+		.Tbanner{
+			background-color: #005687;
+			position: relative;
+		}
+		.Tbanner>img{
+			position: absolute;
+			top:15px;
+			right:44px;
+			cursor: pointer;
+		}
+		/*top*/
+		#top{
+			background-color: #f4f4f4;
+			height: 28px;
+		}
+		.top-con div{
+			display: flex;
+			justify-content: space-between;
+		}
+		.top-con p{
+			font-size: 12px;
+			color: #998c59;
+			height: 28px;
+			line-height: 28px;
+		}
+		.top-con ul{
+			width: 496px;
+			height: 28px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.top-con ul li{
+		    font-size: 12px;
+		    height: 12px;
+		    line-height: 12px;
+		    cursor: pointer;
+		    z-index: 100;
+		}
+		.top-con ul li a{
+			color: #999;
+		}
+		.top-con ul li a:hover{
+			color: #000;
+		}
+		#top .top-con ul li:nth-child(2),#top .top-con ul li:nth-child(5){
+			border-right: 1px solid #e0dde1;
+			padding-right: 20px;
+		}
+		.top-con ul li b{
+			color: #af2120;
+			font-weight: normal;
+		}
+		.top-con ul li:hover{
+			color: #000;
+		}
+		#top .top-con ul li:hover #top_red{
+		    border-bottom: 1px solid #af2120;
+		    text-decoration: none;
+		}
+		#top .top-con ul li b:hover{
+			color: #af2120;
+		}
+		#top .top-con ul #Li_Customer{
+			position: relative;
+			color: #999;
+		}
+		#top .top-con ul #Li_Customer div{
+		    height: 26px;
+		    width: 70px;
+		    position: absolute;
+		    top: -6px;
+		    left: -10px;
+		    background-color: #fff;
+		    font-size: 12px;
+		    color: #000;
+		    line-height: 22px;
+		    padding-left: 9px;
+		    cursor: pointer;
+		    border:1px solid #d0d0d0;
+		    border-bottom: none;
+		    display: none;
+		    z-index: 1000;
+		}
+		#top .top-con ul #Li_Customer dl{
+			width: 219px;
+			height: 0px;
+			position: absolute;
+			top:19px;
+			right:-12px;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    transition: height .5s;
+		    overflow: hidden;
+		    z-index: 1000;
+		    background-color: #fff;
+		}
+		#top .top-con ul #Li_Customer dl dt{
+			height: 80px;
+			padding-top: 22px;
+			width: 186px;
+			border-bottom: 1px solid #efefef;
+		}
+		#top .top-con ul #Li_Customer dl dt li{
+			font-size: 11px;
+			text-align: center;
+			height: 26px;
+			border-right: 0px;
+		    font-weight: normal;
+		}
+		#top .top-con ul #Li_Customer dl dt li a{
+			color: #717171;
+		}
+		#top .top-con ul #Li_Customer dl dd{
+			height: 66px;
+			width: 186px;
+			padding-top: 15px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		#top .top-con ul #Li_Customer dl dd p{
+			font-size: 11px;
+			color: #949494;
+		    height: 18px;
+		}
+		#top .top-con ul #Li_Customer:hover div{
+			display: block;
+		}
+		#top .top-con ul #Li_Customer:hover dl{
+			height: 167px;
+			border:1px solid #d0d0d0;
+		}
+        .header_logo{
+        	height: 100px;
+        }
+        .hl_con{
+            height: 100%;
+        }
+        .hl_con .hl_left{
+        	height: 100%;
+        	padding-left: 35px;
+        	float: left;
+        	display: flex;
+        	align-items: center;
+        }
+        .hl_con .hl_left dl{
+        	margin-left: 60px;
+        	margin-right: 6px;
+        }
+        .hl_con .hl_left dl dt{
+            height: 23px;
+            font-size: 16px;
+            color: #666;
+        }
+        .hl_con .hl_left dl dd{
+        	font-size: 11px;
+        	color: #999;
+        }
+        .hl_con .hl_left button{
+        	width: 40px;
+        	height: 18px;
+        	border-radius: 8px;
+        	color: #cc5252;
+        	font-size: 12px;
+        	color: #fff;
+        	text-align: center;
+        	background-color: #cc5252;
+        	border: 0px;
+        	position: relative;
+        	top: -10px;
+        }
+        .hl_right{
+        	height: 100%;
+        	float: right;
+        	display: flex;
+        	align-items: center;
+        }
+        .hl_right #hl_txt{
+        	height: 38px;
+        	width: 228px;
+        	border: 1px solid #ca5650;
+        	border-radius: 15px 0px 0px 15px;
+        	padding-left: 18px;
+        }
+        #sou_wb{
+        	height: 38px;
+        	width: 60px;
+        	border: none;
+        	font-size: 11px;
+        	color: #faf1f1;
+        	background-color: #cb5451;
+        }
+        #sou_bd{
+        	height: 38px;
+        	width: 60px;
+        	background-color: #666;
+        	font-size: 11px;
+        	color: #fff;
+        	border: none;
+        	border-radius: 0px 15px 15px 0px;
+        }
+        .picture{
+        	height: 120px;
+        	background: url('./images/25.jpg') no-repeat center 0;
+        }
+        nav{
+        	height: 44px;
+        	background-color: #102947;
+        }
+        .nav-con{
+        	height: 100%;
+        }
+        nav ul{
+        	padding-left: 48px;
+        	height: 100%;
+        	float: left;
+        }
+        nav ul li{
+        	float: left;
+        	height: 44px;
+        	font-size: 12px;
+        	color: #ccc;
+        	line-height: 41px;
+        	margin-right: 46px;
+        	cursor: pointer;
+        	font-weight: bold;
+        	padding: 0 2px;
+        }
+        nav ul li:hover{
+           border-bottom: 3px solid #fff;
+        }
+        nav span{
+        	display: inline-block;
+        	width: 117px;
+        	height: 44px;
+        	background-color: #23303b;
+        	font-size: 11px;
+        	color: #fff;
+        	float: right;
+            line-height: 41px;
+            padding-left: 17px;
+            cursor: pointer;
+        }
+        nav span .glyphicon{
+        	margin-right: 10px;
+        	font-size: 16px;
+        	position: relative;
+        	top: 4px;
+        }
+    </style>
+
+	 <!-- 顶部广告图 -->
+    <section class="Tbanner">
+        <img src="./images/09_03.gif" alt="" id="Tb_btn">
+        <div class="Tbnner-con">
+            <img src="http://image8.wbiao.co/mall/63d5611186224484a47160bda67acab4.jpg" alt="">
+        </div>
+    </section>
+    <!-- 顶部导航 -->
+    <section id="top" class="clear_fix">
+        <div class="top-con">
+        <div>
+        <p>正品保障，免息分期！</p>
+        <ul>
+        	<li><a href="login.html">请登录</a></li>
+        	<li><a href="./Registered.html" id="top_red"><b>注册送3500元大礼包</b></a></li>
+        	<li><a href="./Cart_shop.html">购物车</a></li>
+        	<li id="Li_Customer">
+            客户服务
+            <div>客户服务</div>
+            <dl id="Customer">  <!-- 客户服务 -->
+            <dt class="row">
+            <li class="col-xs-6"><a href="javascript:;">客户顾问</a></li>
+            <li class="col-xs-6"><a href="javascript:;">售后维修</a></li>
+            <li class="col-xs-6"><a href="javascript:;">帮忙中心</a></li>
+            <li class="col-xs-6"><a href="javascript:;">办理信用卡</a></li>
+            </dt>
+            <dd>
+            <p>客服专线: 400-883-2688</p>
+            <p>外呼号码: 020-83931899</p>
+            </dd>
+            </dl>
+            </li>
+        	<li><a href="javascript:;">会员福利</a></li>
+        	<li><a href="javascript:;">ENGLISH</a></li>
+        </ul>
+        </div>
+        </div>
+    </section>
+    <header>
+        <div class="header_logo">
+            <div class="hl_con">
+                <div class="hl_left">
+                    <img src="./images/13_03.gif" alt="">
+                    <dl>
+                    	<dt>万表官方旗舰店</dt>
+                    	<dd>销量66869 粉丝40406</dd>
+                    </dl>
+                    <button>自营</button>
+                </div>
+                <div class="hl_right">
+                    <input type="text" placeholder="搜索 品牌/系列/型号" id="hl_txt">
+                    <button id="sou_wb">搜万表</button>
+                    <button id="sou_bd">搜本店</button>
+                </div>
+            </div>	
+        </div>
+
+        <div class="picture"></div>
+        <nav>
+            <div class="nav-con">
+            	<ul>
+            	<li style="border-bottom: 3px solid #fff;">首页</li>
+            	<li>商品</li>
+            	<li>男士腕表</li>
+            	<li>女士腕表</li>
+            	<li>店长推荐</li>
+            	<li>情侣对表</li>
+            	<li>新品上市</li>
+            	<li>预售</li>
+            	<li>怀表专区</li>
+	            </ul>
+	            <span><i class="glyphicon glyphicon-credit-card"></i>联系商家</span>
+            </div>
+        </nav>
+    </header>
+
+<script>
+	// 顶部广告图
+	class Tbanner{
+        constructor(){
+        	this.TbClick()
+        }
+        TbClick(){    //添加点击事件
+        	 $('#Tb_btn').click(() => {$($('.Tbanner')[0]).hide()})   //隐藏顶部广告图
+        	} 
+	}
+	var T = new Tbanner()
+</script>

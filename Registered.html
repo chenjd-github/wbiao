@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>万表网注册页面</title>
+	<link rel="stylesheet" href="./css/Registered.css">
+	<link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+	<section class="box">
+	<!-- 头部 -->
+		<header>
+	        <div class="header-con">
+	            <img src="./images/05_03.gif" alt="" id="wanbiao">
+                <ul>
+                	<li>买表</li>
+                	<li>修表</li>
+                	<li>二手表交易</li>
+                </ul>
+	        </div>
+	    </header>
+	<!-- 内容 -->
+	    <main>
+	    	<div class="main-con">
+	    	    <h2>注册万表会员</h2>
+	    	    <form action="Registered.php">
+	    	        <label>
+	    	            <input type="text" name="phone" placeholder="请输入手机号码" id="phone">
+	    	            <i>请输入您的手机密码</i>
+	    	        </label>
+
+	    	        <label id="code">
+	    	            <div>
+	    	            <input type="text"  placeholder="请输入图形验证码">
+	    	            <img src="./images/06_03.gif" alt="">
+	    	            </div>
+	    	            <i id="smsi">请输入图形验证码</i>
+	    	        </label>
+
+	    	        <label id="sms">
+	    	            <div>
+	    	        	    <input type="text"  placeholder="请输入短信验证码" name="acptcha">
+                            <figure id="obtain">获取验证码</figure>
+                        </div>
+                        <i id="smsi">请输入短信验证码</i>
+	    	        </label>
+
+	    	        <label class="Pass">
+                        <input type="password" name="pwd" placeholder="请设置密码(6-12位字母、数字、下划线)" id="pwd1">
+                        <i>密码应为6-20位任意字符组合</i><img src="./images/07_03.gif" alt="" class="oimg">
+                    </label>	
+
+                    <label class="Pass">
+                        <input type="password"  placeholder="请再次输入密码" id="pwd2">
+                        <i>两次密码不一致，请检查您的密码</i><img src="./images/07_03.gif" alt="" class="oimg">
+                    </label>
+
+                    <input type="submit" value="立即注册" id="btn">
+	    	    </form>
+	    	    <p>点击“立即注册”，即表示您同意并愿意遵循<b>万表网用户协议</b></p>
+	    	</div>
+	    </main>
+	</section>
+
+	<script src="./js/Pegistered.js"></script>
+	<script src="./bootstrap/jquery-1.11.1.js"></script>
+</body>
+</html>

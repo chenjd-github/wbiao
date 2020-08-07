@@ -1,0 +1,198 @@
+@charset "utf-8";
+::-webkit-input-placeholder { 
+  color: #dbd6db;
+  font-size: 11px; 
+ }
+ input{
+ 	font-weight: normal;
+ }
+ body{
+ 	background-color: #;
+ }
+/*header部分*/
+header{
+	height: 114px;
+	display: flex;
+	align-items: center;
+	padding-left: 228px;
+}
+main{
+	height: 522px;
+	background: url(../images/login_bg.jpg) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+main article{
+	width: 343px;
+	min-height: 414px;
+	position: absolute;
+    top:45px;
+    left:60%;
+    background-color: #fff;
+    padding-top: 36px;
+}
+.article-con{
+	width: 270px;
+	margin:0px auto;
+}
+main article figcaption{
+	height: 22px;
+	margin-bottom: 16px;
+}
+main article figcaption div{
+	height: 22px;
+	width: 50%;
+	font-size: 16px;
+	color: #a1a2a1;
+	line-height: 22px;
+	float: left;
+	cursor: pointer;
+}
+main article figcaption div:first-child{
+	border-right:1px solid #ddd;
+	padding-left: 40px;
+}
+main article figcaption div:last-child{
+	padding-left: 25px;
+}
+.red{
+	color: #cc5252;
+}
+#tel,#code,#dx_code{
+    border: 1px solid #ddd;
+    height: 40px;
+    padding-left: 8px;
+}
+#tel{
+	width: 270px;
+}
+#code{
+	width: 180px;
+	margin-bottom: 10px;
+}
+#dx_code{
+	width: 160px;
+}
+main article form label{
+	width: 100%;
+	margin-top: 10px;
+}
+main article form label:nth-child(3){
+	position: relative;
+}
+#hq_code{
+	height: 40px;
+	width: 100px;
+	font-size: 11px;
+	text-align: center;
+	line-height: 38px;
+	color: #f2faeb;
+	background-color: #b1b1b1;
+	border:none;
+	color: #fff;
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+#login{
+	width: 270px;
+	height: 40px;
+	background-color: #cc5252;
+	font-size: 17px;
+	color:#f9e3b8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	margin-top: 5px;
+}
+.article-con aside{
+	height: 24px;
+	position: relative;
+	margin-top: 14px;
+}
+.article-con aside a{
+    font-size: 12px;
+    color: #999;
+}
+.article-con aside ul{
+	position: absolute;
+	right:0px;
+	bottom:0px;
+}
+.article-con aside ul li{
+	padding: 0 11px;
+	float: left;
+	height: 12px;
+	line-height: 12px;
+	color: #999;
+	font-size: 12px;
+	cursor: pointer;
+}
+.article-con aside ul li:nth-child(1){
+	border-right: 1px solid #cdd0db;
+}
+.article-con label i{
+	display: inline-block;
+	font-size: 10px;
+	color: #af4a58;
+	font-weight: normal;
+	display: none;
+}
+#shaoma_login{
+	display: none;
+}
+#shaoma_login div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#shaoma_login img{
+	margin-top: 30px;
+}
+#shaoma_login dl{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#shaoma_login dl dt{
+	font-size: 12px;
+	color: #666;
+	font-weight: normal;
+}
+#shaoma_login dl dt b{
+	color: #cc5252;
+	font-weight: normal;
+}
+#shaoma_login dl dd{
+	font-size: 12px;
+	color: #999;
+}
+#shaoma_login  button{
+	margin-top: 24px;
+	width: 130px;
+	height: 34px;
+	border-radius: 13px;
+	font-size: 12px;
+	color: #666;
+	border: 1px solid #999;
+}
+#shaoma_login  button:hover{
+	background-color: #fff;
+}
+/*foot部分*/
+footer{
+	height: 146px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 43px;
+}
+footer p{
+	font-size: 9px;
+	color: #999;
+	height: 25px;
+	line-height: 25px;
+
+}

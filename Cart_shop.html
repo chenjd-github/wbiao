@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>万表网购物车页面</title>
+	<link rel="stylesheet" href=".//bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/Cart_shop.css">
+</head>
+<body>
+    <!-- 顶部广告栏 -->
+	<article id="Tbanner">
+	    <div class="Tbanner-con">
+		    <img src="./images/26.jpg" alt="" id="shop_img">
+		    <img src="./images/30_03.gif" alt="" id="xx">
+	    </div>
+	</article>
+	<!-- 顶部导航栏 -->
+	<section id="top" class="clear_fix">
+        <div class="top-con">
+        <div>
+        <p>正品保障，免息分期！</p>
+        <ul>
+        	<li><a href="login.html">请登录</a></li>
+        	<li><a href="./Registered.html" id="top_red"><b>注册送3500元大礼包</b></a></li>
+        	<li><a href="javascript:;">购物车</a></li>
+        	<li id="Li_Customer">
+            客户服务
+            <div>客户服务</div>
+            <dl id="Customer">  <!-- 客户服务 -->
+            <dt class="row">
+            <li class="col-xs-6"><a href="javascript:;">客户顾问</a></li>
+            <li class="col-xs-6"><a href="javascript:;">售后维修</a></li>
+            <li class="col-xs-6"><a href="javascript:;">帮忙中心</a></li>
+            <li class="col-xs-6"><a href="javascript:;">办理信用卡</a></li>
+            </dt>
+            <dd>
+            <p>客服专线: 400-883-2688</p>
+            <p>外呼号码: 020-83931899</p>
+            </dd>
+            </dl>
+            </li>
+        	<li><a href="javascript:;">会员福利</a></li>
+        	<li><a href="javascript:;">ENGLISH</a></li>
+        </ul>
+        </div>
+        </div>
+    </section>
+    <!-- header部分 -->
+    <header>
+        <div class="header-con">
+          <!-- logo -->
+            <div class="logo">
+                <img src="./images/13_03.gif" alt="" class="wbiao">
+                <ul>
+                    <li>买表</li>
+                    <li>修表</li>
+                    <li>二手表交易</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-con">
+            <figcaption>全部商品(<span id="shopping">0</span>)</figcaption>
+            <section class="shop_top">
+                <!-- 登录按钮 -->
+                <div class="shop_login">温馨提示：登录后购物车的商品将保存到您账户中，<span>立即登录</span></div>
+                <!-- 标题 -->
+                <div class="shop_title">
+	                <figcaption style="width:160px;"><input type="checkbox" name="a0" value="全选" class="a0">全选</figcaption>
+		            <figcaption style="width:325px;">商品信息</figcaption>
+		            <figcaption style="width:143px;">单价(元)</figcaption>
+		            <figcaption style="width:144px;">数量</figcaption>
+		            <figcaption style="width:144px;">小计(元)</figcaption>
+		            <figcaption style="width:72px;">操作</figcaption>
+                </div>
+            </section>
+
+            <!-- 内容 -->
+
+            <!-- 购物车尾部 -->
+            <section class="shop_footer">
+                <h4 style="width: 105px"><input type="checkbox" name="a0" value="全选" class="a0">全选</h4>
+	            <h4 class="allDelete" style="width: 52px">删除</h4>
+	            <h4 style="width: 76px">移入收藏</h4>
+	            <h4 style="width: 234px">清空失效商品</h4>
+	            <h4 style="width: 205px">以选商品<span id="choose">0</span>件</h4>
+	            <h4 style="width: 140px"><p>合计：&nbsp;<b>¥</b><span id="total">0</span></p></h4>
+	            <h4 id='settle' style="width: 180px">结算</h4>
+            </section>
+        </div>
+    </main>
+
+    <footer id="foot"></footer>
+	
+</body>
+</html>
+<script src="./bootstrap/jquery.js"></script>
+<script src="./bootstrap/js/bootstrap.js"></script>
+<script src="./js/Cart_shop.js"></script>

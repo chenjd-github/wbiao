@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>万表网列表页</title>
+    <link rel="stylesheet" href="./css/common.css">
+	  <link rel="stylesheet" href="./css/list.css">
+	  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    
+</head>
+<body>
+    <!-- 顶部广告图 -->
+    <section class="Tbanner">
+        <img src="./images/09_03.gif" alt="" id="Tb_btn">
+        <div class="Tbnner-con">
+            <img src="http://image8.wbiao.co/mall/63d5611186224484a47160bda67acab4.jpg" alt="">
+        </div>
+    </section>
+    <!-- 顶部导航 -->
+    <section id="top" class="clear_fix">
+        <div class="top-con">
+        <div>
+        <p>正品保障，免息分期！</p>
+        <ul>
+        	<li><a href="login.html">请登录</a></li>
+        	<li><a href="./Registered.html" id="top_red"><b>注册送3500元大礼包</b></a></li>
+        	<li><a href="javascript:;">购物车</a></li>
+        	<li id="Li_Customer">
+            客户服务
+            <div>客户服务</div>
+            <dl id="Customer">  <!-- 客户服务 -->
+            <dt class="row">
+            <li class="col-xs-6"><a href="javascript:;">客户顾问</a></li>
+            <li class="col-xs-6"><a href="javascript:;">售后维修</a></li>
+            <li class="col-xs-6"><a href="javascript:;">帮忙中心</a></li>
+            <li class="col-xs-6"><a href="javascript:;">办理信用卡</a></li>
+            </dt>
+            <dd>
+            <p>客服专线: 400-883-2688</p>
+            <p>外呼号码: 020-83931899</p>
+            </dd>
+            </dl>
+            </li>
+        	<li><a href="javascript:;">会员福利</a></li>
+        	<li><a href="javascript:;">ENGLISH</a></li>
+        </ul>
+        </div>
+        </div>
+    </section>
+
+	<section id="box">
+	<!-- 头部 -->
+	<header>
+		<div class="header-con">
+            <!-- logo -->
+            <div class="logo">
+                <ul>
+                    <li>买表</li>
+                    <li>修表</li>
+                    <li>二手表交易</li>
+                </ul>
+                <input type="text" placeholder="东方星" id="search">
+                <span class="glyphicon glyphicon-search"></span>
+                <button type="button" class="btn btn-danger" id="search_btn">搜索</button>
+                <aside id="logo_aside">
+                <p>热门推荐</p>
+                <button type="button" class="a_btn">东方星</button>
+                <button type="button" class="a_btn">劳力士</button>
+                </aside>
+                <img src="./images/15_03.gif" alt="">
+            </div>
+            <!-- banner  -->
+           <div class="banner">
+           <h4>全部商品<em class="glyphicon glyphicon-list"></em></h4>
+           <ul id="ul_a" style="height:0;overflow: hidden;">
+               <li><b>顶级品牌</b> / <a href="javascript:;">百达翡丽</a> <a href="javascript:;">江诗丹顿</a></li>
+               <div class="brand">
+                   <div class="brand_left">
+                   <div class="bl_top">
+                   <figcaption>品牌</figcaption>
+                   <ul></ul>
+                   </div>
+                   <div class="bl_bottom">
+                   <figcaption>热词</figcaption>
+                   <ul>
+                       <li>五十噚</li>
+                       <li>百达翡丽</li>
+                       <li>复杂功能计时</li>
+                       <li>陀飞轮</li>
+                       <li>Master大师</li>
+                       <li>限量款</li>
+                   </ul>
+                   </div>
+                   </div>
+                   <div class="brand_right">
+                   <img src="./images/18_03.gif" alt="">
+                   </div>
+               </div>
+               <li><b>奢华品牌</b> / <a href="javascript:;">欧米茄</a>  <a href="javascript:;">万国 </a> <a href="javascript:;">百年灵</a> </li>
+               <li><b>高级品牌</b> / <a href="javascript:;">浪琴 </a> <a href="javascript:;">泰格豪雅</a> <a href="javascript:;">帝舵</a></li>
+               <li><b>轻奢时尚</b> / <a href="javascript:;">天梭 </a> <a href="javascript:;">美度 </a> <a href="javascript:;">赫柏林</a> </li>
+               <li><b>年轻潮牌</b> / <a href="javascript:;">卡西欧</a>  <a href="javascript:;">迪士尼</a>  <a href="javascript:;">漫威</a></li>
+               <li><b>智能手表</b> / <a href="javascript:;">佳明 </a> <a href="javascript:;">华为 </a> <a href="javascript:;">颂拓</a></li>
+               <li><b>表带</b> / <a href="javascript:;">积优</a> <a href="javascript:;">奇美拉</a> <a href="javascript:;">欧时浩</a> </li>
+               <li><b>维修保养</b> / <a href="javascript:;">配件更换</a>  <a href="javascript:;">故障维修</a></li>
+           </ul>
+
+           <ul role="tablist" id="ul_b">
+              <li><a href="javascript:;">男表</a></li>
+              <li><a href="javascript:;">女表</a></li>
+              <li><a href="javascript:;">秒杀</a><img src="./images/14_03.gif" alt=""></li>
+              <li><a href="javascript:;">手表行情</a></li>
+              <li><a href="javascript:;">品牌馆</a></li>
+              <li><a href="javascript:;">体验中心</a></li>
+              <li><a href="javascript:;">名匠维修</a></li>
+              <li><a href="javascript:;">二手竞拍</a></li>
+              <li><a href="javascript:;">优选二手表</a></li>
+              <li><a href="javascript:;">高价回收</a><img src="./images/14_03.gif" alt=""></li>
+              <li><a href="javascript:;">手表资讯</a></li>
+            </ul>
+           </div>
+		</div>
+	</header>
+
+  <nav>
+     <div class="nav-con">
+       <div class="nav_left">
+       <a href="i.html" target="blank">首页</a>
+       <a href="javascript:;">商品中心</a>
+       </div>
+       <div class="nav_right">
+       <a href="javascript:;">热门搜索:</a>
+       <a href="javascript:;">劳力士</a>
+       <a href="javascript:;">东方红</a>
+       </div>
+     </div>
+  </nav>
+  
+  <main>
+    <div class="main-con">
+        <!-- 左边盒子 -->
+        <section class="main_left">
+        <!-- 广告轮播 -->
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!--小圆点 -->
+              <ol class="carousel-indicators" id="dots">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              </ol>
+
+              <!-- 图片 -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="./images/9.jpg" alt="...">
+                </div>
+                <div class="item">
+                  <img src="./images/10.jpg" alt="...">
+                </div>
+              </div>
+          </div>
+          <!-- 评价轮播图 -->
+          <div class="evaluation evaluation1">
+              <figcaption>
+                  <h4 style="color: #666;font-weight: bold;">表友晒单</h4>
+                  <h4>表友评论</h4>
+              </figcaption>
+              <div id="list_plug"></div>
+          </div>
+          <!-- 浏览记录 -->
+          <div class="evaluation evaluation2">
+              <figcaption>
+                  <h4 style="color: #666;font-weight: bold;">最近浏览</h4>
+              </figcaption>
+              <div class="history">
+                  <div class="history-con">
+
+                  </div>
+              </div>
+
+          </div>
+        </section>
+
+        <!-- 右边盒子 -->
+        <section class="main_right">
+            <!-- 筛选框 -->
+            <div class="screen">
+                <h4>已找到5000件</h4>
+                <dl>
+                  <dt>全部分类</dt>
+                  <dd>
+                  <li><a href="javascript:;" class="c">腕表</a></li>
+                  <li><a href="javascript:;">表带</a></li>
+                  </dd>
+                </dl>
+                <dl class="price_dd">
+                  <dt>价格</dt>
+                  <dd>
+                  <li><a href="javascript:;">1000以下</a></li>
+                  <li><a href="javascript:;">1000-3000</a></li>
+                  <li><a href="javascript:;">3000-5000</a></li>
+                  <li><a href="javascript:;">5000-10,000</a></li>
+                  <li><a href="javascript:;">10,000-50,000</a></li>
+                  <li><a href="javascript:;">50,000-100,000</a></li>
+                  <li><a href="javascript:;">100,000以上</a></li>
+                  <div class="price_range">
+                    <input type="text">
+                    <span>-</span>
+                    <input type="text">
+                    <button>确定</button>
+                  </div>
+                  </dd>
+                </dl>
+                <aside>
+                    <figcaption>品牌</figcaption>
+                    <div>
+                        <ul>
+                          <li><a href="javascript:;">爱宝时</a></li>
+                          <li><a href="javascript:;">天梭</a></li>
+                          <li><a href="javascript:;">浪琴</a></li>
+                          <li><a href="javascript:;">美度</a></li>
+                          <li><a href="javascript:;">欧米茄</a></li>
+                          <li><a href="javascript:;">劳力士</a></li>
+                          <li><a href="javascript:;">卡地亚</a></li>
+                          <li><a href="javascript:;">赫柏林</a></li>
+                          <li><a href="javascript:;">CK</a></li>
+                          <li><a href="javascript:;">百达翡丽</a></li>
+                          <li><a href="javascript:;">拓天马</a></li>
+                          <li><a href="javascript:;">宝玑</a></li>
+                          <li><a href="javascript:;">宝珀</a></li>
+                          <li><a href="javascript:;">莫勒</a></li>
+                          <li><a href="javascript:;">阿玛尼</a></li>
+                          <li><a href="javascript:;">帝舵</a></li>
+                          <li><a href="javascript:;">积家</a></li>
+                          <li><a href="javascript:;">艾美达</a></li>
+                          <li><a href="javascript:;">柏高</a></li>
+                          <li><a href="javascript:;">库尔</a></li>
+                          <li><a href="javascript:;">沃万国</a></li>
+                          <li><a href="javascript:;">西铁城</a></li>
+                          <li><a href="javascript:;">荣汉斯格</a></li>
+                          <li><a href="javascript:;">爱拉苏蒂∙原创</a></li>
+                        </ul>
+                        <button><span class="glyphicon glyphicon-chevron-down"></span>更多</button>
+                    </div>
+                </aside>
+                <dl>
+                  <dt>适用人群</dt>
+                  <dd>
+                  <li><a href="javascript:;">男表</a></li>
+                  <li><a href="javascript:;">女表</a></li>
+                  <li><a href="javascript:;">中性</a></li>
+                  </dd>
+                  <button class="dd_btn"><span class="glyphicon glyphicon-plus"></span>多选</button>
+                </dl>
+                <dl>
+                  <dt>机芯类型</dt>
+                  <dd>
+                  <li><a href="javascript:;">石英</a></li>
+                  <li><a href="javascript:;">自动机械</a></li>
+                  <li><a href="javascript:;">手动机械</a></li>
+                  <li><a href="javascript:;">机械</a></li>
+                  <li><a href="javascript:;">电子</a></li>
+                  <li><a href="javascript:;">光动能</a></li>
+                  <li><a href="javascript:;">万年历光能（光动能）</a></li>
+                  </dd>
+                  <button class="dd_btn"><span class="glyphicon glyphicon-plus"></span>多选</button>
+                </dl>
+            </div>
+            <!-- 商品栏 -->
+            <div class="shop">
+            <figcaption>
+            <ul>
+                <li class="sc">综合排序</li>
+                <li>销量优先</li>
+                <li>价格排序</li>
+                <li>新品</li>
+            </ul>
+            <figure>
+                <input type="checkbox"> <span>闪电发货</span>
+                <input type="checkbox"> <span>一口价</span>
+                <input type="checkbox"> <span>预售</span>
+                <input type="checkbox"> <span>特卖</span>
+                <input type="checkbox"> <span>稀缺款</span>
+            </figure>
+            <div class="shop_pages">
+                <a href="javascript:;" class="glyphicon glyphicon-chevron-left"></a>
+                <span><i class="wb_num">1</i>/<i class="wb_page">73</i></span>
+                <a href="javascript:;" class="glyphicon glyphicon-chevron-right"></a>
+            </div>
+            </figcaption>
+            </div>
+
+            <!-- 列表栏目 -->
+            <div class="list_shop">
+                <div class="row shop_row">
+                </div>
+                <!-- 分页器 -->
+                <div id="pagination"></div>
+            </div>
+        </section>
+    </div>
+  </main>
+  <!-- 尾部 -->
+  <footer id="foot">
+  </footer>
+
+
+	</section>
+</body>
+<script src="./bootstrap/jquery.js"></script>
+<script src="./bootstrap/js/bootstrap.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/pagination.js"></script>
+<script src="./js/list.js"></script>
+
+</html>

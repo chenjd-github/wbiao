@@ -1,0 +1,141 @@
+@charset "utf-8";
+.box{
+	background-color: #fafafa;
+}
+/*版心*/
+.header-con,.main-con{
+	width: 988px;
+	margin:0 auto;
+}
+/*header部分*/
+.header-con{
+	height: 155px;
+	/*background: #fafafa url('../images/05_03.gif') no-repeat 15px 55px;*/
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+}
+.header-con img{
+	margin-right: 22px;
+	cursor: pointer;
+}
+.header-con ul li{
+	font-size: 15px;
+	color:#b08757;
+	padding: 0 7px;
+	float: left;
+	height: 15px;
+	line-height: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+header .header-con ul li:nth-child(2){
+	border-right: 1px solid #f3efe9;
+	border-left: 1px solid #f3efe9;
+}
+/*main部分*/
+.main-con{
+	background-color: #fff;
+	min-height: 546px;
+}
+.main-con h2{
+	height: 115px;
+	font-size: 26px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+.main-con form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main-con form input{
+	height: 40px;
+	padding-left: 35px;
+	border:1px solid #e8e8e8;
+	display: block;
+	margin: 7px 0px;
+}
+.main-con form #phone{
+	width: 338px;
+	background: url(../images/01_03.gif) no-repeat 10px 11px;
+}
+.main-con form i{
+	background: url(../images/04_03.gif) no-repeat 0px 2px;
+	font-size: 12px;
+	color: #e62e2d;
+	padding-left: 19px;
+	position: relative;
+	font-weight: bold;
+	display: none;
+}
+.main-con form #sms{
+	width: 338px;
+	margin: 7px 0px 0px 0px;
+}
+.main-con form #code{
+	width: 338px;
+	margin: 7px 0px 0px 0px;
+}
+.main-con form #sms div,.main-con form #code div{
+	height: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 7px;
+}
+.main-con form #code input,.main-con form #sms input{
+	width: 229px;
+	background: url(../images/02_03.gif) no-repeat 10px 11px;
+}
+.main-con form #code img{
+	width: 99px;
+	height: 38px;
+	cursor: pointer;
+}
+.main-con form #sms figure{
+	width: 99px;
+	border:1px solid #ddd;
+	color: #333;
+	font-size: 12px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+}
+.main-con form #pwd1,.main-con form #pwd2{
+	width: 338px;
+	background: url(../images/03_03.gif) no-repeat 10px 11px/*,url(../images/07_03.gif) no-repeat 311px 17px*/;
+}
+.main-con form .Pass{
+	position: relative;
+}
+.main-con form .oimg{
+   position: absolute;
+   top: 25px;
+   right: 10px;
+}
+.main-con form #btn{
+	margin-top: 20px;
+	margin-bottom: 28px;
+	width: 338px;
+	background-color: #b32424;
+	height: 38px;
+	line-height: 38px;
+	font-size: 13px;
+	padding-left: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.main-con p{
+	font-size: 12px;
+	color: #999;
+    text-align: center;
+}
+.main-con p b{
+	font-size: 12px;
+	color: #000;
+	cursor: pointer;
+}

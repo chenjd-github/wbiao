@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>万表网登陆页面</title>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+	<header>
+	<img src="./images/12_03.gif" alt="" id="wanbiao" style="cursor: pointer">
+	</header>
+	<main>
+	    <article>
+	        <!-- 标题 -->
+	        <div class="article-con">
+	            <figcaption>
+	                <div class="red" id="hy_login">会员登陆</div>
+	                <div id="sm_login">扫码登陆</div>
+	            </figcaption>
+	            <!-- 表单 -->
+	             <section id="huiyuan_login">
+	            <form action="login.php">
+	            <label>
+	                <input type="tel"  placeholder="手机号码" id="tel" name="tell">
+	                <i>请填写正确的手机号码</i>
+	            </label>
+	             <label>
+	        	 <input type="text" placeholder="请输入图形验证码" id="code">
+	        	 <img src="./images/10_03.gif" alt="">
+	        	 <i>验证码输入错误</i>
+	        	 </label>
+	        	 <label>
+                 <div>
+                 	<input type="text" placeholder="短信验证码" id="dx_code">
+                 	<input type="button" value="获取验证码" id="hq_code">
+                 </div>
+                 <i>短信验证码已过期</i>
+                 </label>
+                 <input type="submit" value="立即登录" id="login">
+	        </form>
+            <aside>
+            <a href="./Registered.html">免费注册</a>
+            <ul>
+            	<li>账号密码</li>
+            	<li>社交登陆</li>
+            </ul>
+            </aside>
+            </section> 
+
+            <section id="shaoma_login">
+            <div>
+            <img src="./images/11_03.gif" alt="">
+            <dl>
+            <dt>使用<b>万表APP</b>扫码登陆</dt>
+            <dd>在首页顶部搜索栏点击扫一扫</dd>
+            </dl>
+            <button type="button" class="btn btn-default">下载万表APP</button>
+            </div>
+            </section>
+	        </div>
+	    </article>
+	</main>
+
+	<footer>
+	<p>万表网名表商城 版权所有 2008-2017 ICP备案证书号:粤ICP备09108738号 网监备案:4401060103141</p>
+	<p>广州市万表科技股份有限公司 地址:广州市番禺区番禺大道北60-1号</p>
+	<p>Copyright 2008-2017 WWW.WBIAO.CN.LTD ALL RIGHT RESERVED.</p>
+	</footer>
+</body>
+
+<script src="./bootstrap/jquery-1.11.1.min.js"></script>
+<script src="./bootstrap/js/bootstrap.js"></script>
+<script src="./js/login.js"></script>
+</html>

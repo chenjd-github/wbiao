@@ -1,0 +1,192 @@
+  <style>
+    .demo{
+        width: 205px;
+        height: 320px;
+        background-color: #fff;
+        padding-top: 30px;
+        padding-left: 18px;
+        position: relative;
+    }
+    .demo .spot{
+        position: absolute;
+        left: -30%;
+        top:306px;
+    }
+	.left-btn,.right-btn{
+		font-family: "宋体";opacity: .3;
+	}
+	.left-btn:hover,.right-btn:hover{
+		opacity: 1;
+	}
+     .eval_img{
+    height: 139px;
+    padding-left: 15px;
+    padding-top: 28px;
+    }
+     .eval_img dl{
+        height: 90px;
+        margin: 0;
+        padding: 0;
+    }
+     .eval_img dl dt{
+        height: 64px;
+        width: 54px;
+        border: 1px solid #ddd;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+
+    }
+     .eval_img dl dt img{
+        width: 44px;
+        height: 54px;
+        cursor: pointer;
+    }
+     .eval_img dl dd{
+        float: left;
+        width: 96px;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+     .eval_img dl dd h5{
+        height: 21px;
+        line-height: 21px;
+        font-size: 10px;
+        color: #333333;
+        padding: 0;
+        margin: 0;
+    }
+     .eval_img dl dd p{
+        margin: 0;
+        padding: 0;
+        height: 32px;
+        font-size: 11px;
+        color: #999999;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+    }
+     .eval_img dl span{
+        position: absolute;
+        width: 11px;
+        height: 3px;
+        right: -12px;
+        top: 34px;
+    }
+    </style>
+
+    <div class="demo"></div>
+    <!-- <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script> -->
+    <script src="./html/jquerylbt/js/index.js"></script>
+    <script>
+        $('.demo').slider({
+            imgList: [
+                {
+                   div : '<div class="eval_img eval_img1"></div>'
+                },
+                {
+                   div : '<div class="eval_img eval_img2"></div>'
+                },
+                {
+                   div : '<div class="eval_img eval_img3"></div>'
+                },
+                {
+                   div : '<div class="eval_img eval_img4"></div>'
+                }
+            ], //图片的列表
+            // width: 500, //图片的宽
+            // height: 300, //图片的高
+            isAuto: true, //是否自动轮播
+            moveTime: 3000, //运动时间
+            direction: 'right', //轮播的方向
+            btnWidth: 0, //按钮的宽
+            btnHeight: 0, //按钮的高
+            spanWidth: 20, //span按钮的宽
+            spanHeight: 2, //span按钮的高
+            spanColor: '#ccc', //span按钮的颜色
+            activeSpanColor: 'red', //选中的span颜色
+            btnBackgroundColor: 'rgba(0, 0, 0, 0.3)', //两侧按钮的颜色
+            spanRadius: '50%', //span按钮的圆角程度
+            spanMargin: 6, //span之间的距离
+        })
+    </script>
+    <script>
+        var arr1 = ['./html/jquerylbt/img/a.jpg','./html/jquerylbt/img/b.jpg','./html/jquerylbt/img/c.jpg','./html/jquerylbt/img/d.jpg','./html/jquerylbt/img/e.jpg','./html/jquerylbt/img/f.jpg','./html/jquerylbt/img/g.jpg','./html/jquerylbt/img/h.jpg','./html/jquerylbt/img/i.jpg','./html/jquerylbt/img/j.jpg','./html/jquerylbt/img/k.jpg',
+        './html/jquerylbt/img/l.jpg']
+            var name1 = ['Mr Luo','隐于林','wb5583277','wb****7616','柒****玖','兜兜的兜','wb****3692','醉凡尘',
+            'wb5892626','wb****2204','s****p','时****沫']
+            var com1 = ['用了，三天还不错，给个好评，个价位应该戴上10年才够本，记得2028年来提醒我追评。',
+            '便宜的一款光动能手表！可以将万表推荐给身边有需要购买手表的好朋友',
+            '不错 适合手腕细的，看到是薛蛮子投资的,希望可以将万表推荐给身边有需要购买手表的好朋友', 
+            '感觉还可以，带带在说个人喜欢薄一点的非常舒服了，谢谢！祝生活愉快！',
+            '第一次在万表上买手表，一两天就到货，虽然中途有点曲折',
+            '总体来说还不错非常精致,给个好评,已经算不错了',
+            '非常好的表，非常精致，时间都调好了',
+            '这个价位的手表这款手表算不错了。毕竟一分钱一分货，不强求。',
+            '用顺丰发过来的 非常感谢！！所以选这款，非常的棒',
+            '超级漂亮！佟丽娅同款,手表很精致，特别喜欢',
+            '好看，大气，蓝色很独特，万表的客服也很专业，非常愉快的购物体验！',
+            '很好，做工精细、精致！几千元原装正品进口确实物有所值！']
+            let str1,str2,str3,str4
+            $(arr1).each(function(index,item,arr){
+                if(index < 3){
+                    str1 += `
+                              <dl>
+                                <dt><img src="${item}" alt=""></dt>
+                                <dd>
+                                <h5>${name1[index]}</h5>
+                                <p>${com1[index]}</p>
+                                <span>...</span>
+                                </dd>
+                              </dl>
+                            `
+                }
+                if(index >= 3 && index < 6){
+                    str2 += `
+                            <dl>
+                                <dt><img src=${item} alt=""></dt>
+                                <dd>
+                                <h5>${name1[index]}</h5>
+                                <p>${com1[index]}</p>
+                                <span>...</span>
+                                </dd>
+                              </dl>
+                            `
+                }
+                if(index >= 6 && index < 9){
+                    str3 += `
+                            <dl>
+                                <dt><img src="${item}" alt=""></dt>
+                                <dd>
+                                <h5>${name1[index]}</h5>
+                                <p>${com1[index]}</p>
+                                <span>...</span>
+                                </dd>
+                              </dl>
+                            `
+                }
+                if(index >= 9 && index < 12){
+                    str4 += `
+                            <dl>
+                                <dt><img src="${item}" alt=""></dt>
+                                <dd>
+                                <h5>${name1[index]}</h5>
+                                <p>${com1[index]}</p>
+                                <span>...</span>
+                                </dd>
+                              </dl>
+                            `
+                }
+            })
+            str1 = str1.replace('undefined','')
+            str2 = str2.replace('undefined','')
+            str3 = str3.replace('undefined','')
+            str4 = str4.replace('undefined','')
+             $('.eval_img1').html(str1)
+             $('.eval_img2').html(str2)
+             $('.eval_img3').html(str3)
+             $('.eval_img4').html(str4)
+    </script>

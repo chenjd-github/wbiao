@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>万表网首页</title>
+    <link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <!-- 顶部广告图 -->
+    <section class="Tbanner">
+        <img src="./images/09_03.gif" alt="" id="Tb_btn">
+        <div class="Tbnner-con">
+            <img src="http://image8.wbiao.co/mall/63d5611186224484a47160bda67acab4.jpg" alt="">
+        </div>
+    </section>
+    <!-- 顶部导航 -->
+    <section id="top" class="clear_fix">
+        <div class="top-con">
+        <div>
+        <p>正品保障，免息分期！</p>
+        <ul>
+        	<li><a href="login.html">请登录</a></li>
+        	<li><a href="./Registered.html" id="top_red"><b>注册送3500元大礼包</b></a></li>
+        	<li><a href="./Cart_shop.html">购物车</a></li>
+        	<li id="Li_Customer">
+            客户服务
+            <div>客户服务</div>
+            <dl id="Customer">  <!-- 客户服务 -->
+            <dt class="row">
+            <li class="col-xs-6"><a href="#">客户顾问</a></li>
+            <li class="col-xs-6"><a href="#">售后维修</a></li>
+            <li class="col-xs-6"><a href="#">帮忙中心</a></li>
+            <li class="col-xs-6"><a href="#">办理信用卡</a></li>
+            </dt>
+            <dd>
+            <p>客服专线: 400-883-2688</p>
+            <p>外呼号码: 020-83931899</p>
+            </dd>
+            </dl>
+            </li>
+        	<li><a href="#">会员福利</a></li>
+        	<li><a href="#">ENGLISH</a></li>
+        </ul>
+        </div>
+        </div>
+    </section>
+
+	<section id="box">
+	<!-- 头部 -->
+	<header>
+		<div class="header-con">
+            <!-- logo -->
+            <div class="logo">
+                <ul>
+                    <li>买表</li>
+                    <li>修表</li>
+                    <li>二手表交易</li>
+                </ul>
+                <input type="text" placeholder="东方星" id="search">
+                <span class="glyphicon glyphicon-search"></span>
+                <button type="button" class="btn btn-danger" id="search_btn">搜索</button>
+                <aside id="logo_aside">
+                <p>热门推荐</p>
+                <button type="button" class="a_btn">东方星</button>
+                <button type="button" class="a_btn">劳力士</button>
+                </aside>
+                <img src="./images/15_03.gif" alt="">
+            </div>
+            <!-- banner  -->
+           <div class="banner">
+           <h4><a href="./list.html">全部商品</a><em class="glyphicon glyphicon-list"></em></h4>
+           <ul id="ul_a">
+               <li><b>顶级品牌</b> / <a href="#">百达翡丽</a> <a href="#">江诗丹顿</a></li>
+               <div class="brand">
+                   <div class="brand_left">
+                   <div class="bl_top">
+                   <figcaption>品牌</figcaption>
+                   <ul></ul>
+                   </div>
+                   <div class="bl_bottom">
+                   <figcaption>热词</figcaption>
+                   <ul>
+                       <li>五十噚</li>
+                       <li>百达翡丽</li>
+                       <li>复杂功能计时</li>
+                       <li>陀飞轮</li>
+                       <li>Master大师</li>
+                       <li>限量款</li>
+                   </ul>
+                   </div>
+                   </div>
+                   <div class="brand_right">
+                   <img src="./images/18_03.gif" alt="">
+                   </div>
+               </div>
+               <li><b>奢华品牌</b> / <a href="#">欧米茄</a>  <a href="#">万国 </a> <a href="#">百年灵</a> </li>
+               <li><b>高级品牌</b> / <a href="#">浪琴 </a> <a href="#">泰格豪雅</a> <a href="#">帝舵</a></li>
+               <li><b>轻奢时尚</b> / <a href="#">天梭 </a> <a href="#">美度 </a> <a href="#">赫柏林</a> </li>
+               <li><b>年轻潮牌</b> / <a href="#">卡西欧</a>  <a href="#">迪士尼</a>  <a href="#">漫威</a></li>
+               <li><b>智能手表</b> / <a href="#">佳明 </a> <a href="#">华为 </a> <a href="#">颂拓</a></li>
+               <li><b>表带</b> / <a href="#">积优</a> <a href="#">奇美拉</a> <a href="#">欧时浩</a> </li>
+               <li><b>维修保养</b> / <a href="#">配件更换</a>  <a href="#">故障维修</a></li>
+           </ul>
+
+           <ul role="tablist" id="ul_b">
+              <li><a href="#">男表</a></li>
+              <li><a href="#">女表</a></li>
+              <li><a href="#">秒杀</a><img src="./images/14_03.gif" alt=""></li>
+              <li><a href="#">手表行情</a></li>
+              <li><a href="#">品牌馆</a></li>
+              <li><a href="#">体验中心</a></li>
+              <li><a href="#">名匠维修</a></li>
+              <li><a href="#">二手竞拍</a></li>
+              <li><a href="#">优选二手表</a></li>
+              <li><a href="#">高价回收</a><img src="./images/14_03.gif" alt=""></li>
+              <li><a href="#">手表资讯</a></li>
+            </ul>
+           </div>
+		</div>
+	</header>
+
+<!-- main部分 -->
+ <main>
+<!-- 轮播图 -->
+ <section id="figure">
+   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- 小圆点-->
+  <ol class="carousel-indicators" id="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+  </ol>
+
+  <!-- 图片-->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active"><img src="./images/1.jpg" alt="..."><div class="carousel-caption"></div></div>
+    <div class="item"><img src="./images/2.jpg" alt="..."><div class="carousel-caption"></div></div>
+    <div class="item"><img src="./images/3.jpg" alt="..."><div class="carousel-caption"></div></div>
+    <div class="item"><img src="./images/4.jpg" alt="..."><div class="carousel-caption"></div></div>
+    <div class="item"><img src="./images/5.jpg" alt="..."><div class="carousel-caption"></div></div>
+    <div class="item"><img src="./images/6.jpg" alt="..."><div class="carousel-caption"></div></div>
+    <div class="item"><img src="./images/7.jpg" alt="..."><div class="carousel-caption"></div></div>
+    <div class="item"><img src="./images/8.jpg" alt="..."><div class="carousel-caption"></div></div>
+  </div>
+
+  <!-- 箭头 -->
+  <a class="left carousel-control direction" href="#carousel-example-generic" role="button" data-slide="prev" id="prev">
+    &lt;
+  </a>
+  <a class="right carousel-control direction" href="#carousel-example-generic" role="button" data-slide="next" id="next">
+    &gt;
+  </a>
+</div>
+ </section>
+
+    <div class="main-con">
+        <!-- 广告图 -->
+        <section class="Advertising clear_fix">
+                <li><img src="./images/34.jpg" alt=""></li>
+                <li><img src="./images/35.jpg" alt=""></li>
+                <li><img src="./images/36.jpg" alt=""></li>
+                <li><img src="./images/37.jpg" alt=""></li>
+        </section>
+        <!-- 本季爆款 -->
+        <section class="Com clear_fix">
+            <figcaption>本月爆款<img src="./images/38_03.gif" alt=""></figcaption>
+            <div class="Com_left"><img src="./images/39.jpg" alt=""></div>
+            <div class="Com_right">
+            <li><img src="./images/40.jpg" alt=""></li>
+            <li><img src="./images/41.jpg" alt=""></li>
+            <li><img src="./images/42.jpg" alt=""></li>
+            <li><img src="./images/43.jpg" alt=""></li>
+            </div>
+            <div class="arrow_left">
+                <a href="javascript:;" class="arrow_left"><</a>
+            </div>
+            <div class="arrow_right">
+                <a href="javascript:;" class="arrow_right">></a>
+            </div>
+        </section>
+        <!-- 二手拍卖 -->
+        <section class="auction">
+             <figcaption>二手拍卖</figcaption>
+             <div class="auction_left"><img src="./images/44.jpg" alt=""></div>
+             <div class="auction_right" id="box1">
+                 <div id="images" style="left: -800px">
+                       <div class="auction_right_div auction_right_2">
+                       <dl>
+                         <dt><img src="./images/49.jpg" alt=""></dt>
+                         <dd>
+                         <h5>欧米茄</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥20800</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/50.jpg" alt=""></dt>
+                         <dd>
+                         <h5>万国</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥19999</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/51.jpg" alt=""></dt>
+                         <dd>
+                         <h5>宝柏</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥50800</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/52.jpg" alt=""></dt>
+                         <dd>
+                         <h5>真力时</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥77500</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+                   </div>
+
+                       <div class="auction_right_div auction_right_1">
+                       <dl>
+                         <dt><img src="./images/45.jpg" alt=""></dt>
+                         <dd>
+                         <h5>欧米茄</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥20800</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/46.jpg" alt=""></dt>
+                         <dd>
+                         <h5>卡地亚</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥19999</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/47.jpg" alt=""></dt>
+                         <dd>
+                         <h5>劳力士</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥50800</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/48.jpg" alt=""></dt>
+                         <dd>
+                         <h5>真力时</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥77500</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+                   </div>
+
+                   <div class="auction_right_div auction_right_2">
+                       <dl>
+                         <dt><img src="./images/49.jpg" alt=""></dt>
+                         <dd>
+                         <h5>欧米茄</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥20800</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/50.jpg" alt=""></dt>
+                         <dd>
+                         <h5>万国</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥19999</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/51.jpg" alt=""></dt>
+                         <dd>
+                         <h5>宝柏</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥50800</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/52.jpg" alt=""></dt>
+                         <dd>
+                         <h5>真力时</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥77500</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+                   </div>
+
+                   <div class="auction_right_div auction_right_1">
+                       <dl>
+                         <dt><img src="./images/45.jpg" alt=""></dt>
+                         <dd>
+                         <h5>欧米茄</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥20800</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/46.jpg" alt=""></dt>
+                         <dd>
+                         <h5>卡地亚</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥19999</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/47.jpg" alt=""></dt>
+                         <dd>
+                         <h5>劳力士</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥50800</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+
+                       <dl>
+                         <dt><img src="./images/48.jpg" alt=""></dt>
+                         <dd>
+                         <h5>真力时</h5>
+                         <div><span class="glyphicon glyphicon-euro"></span>
+                         <ul class="countdown">
+                         <li>3</li>
+                         <li>4</li>
+                         <li>:</li>
+                         <li>5</li>
+                         <li>8</li>
+                         <li>:</li>
+                         <li>1</li>
+                         <li>4</li>
+                         </ul>
+                         </div>
+                         <p><span>¥77500</span><del>¥44.500</del></p>
+                         </dd>
+                       </dl>
+                   </div>
+                </div>
+                <a href="javascript:" class="direction1" id="prev1" style="color:#fff;text-decoration: none;">&lt;</a>
+                <a href="javascript:" class="direction1" id="next1" style="color:#fff;text-decoration: none;">&gt;</a>            
+             </div>
+        </section>
+
+        <!-- 本季爆款 -->
+        <section class="Com clear_fix">
+            <figcaption>时尚爆款<img src="./images/58_03.gif" alt=""></figcaption>
+            <div class="Com_left"><img src="./images/53.jpg" alt=""></div>
+            <div class="Com_right">
+            <li><img src="./images/54.jpg" alt=""></li>
+            <li><img src="./images/55.jpg" alt=""></li>
+            <li><img src="./images/56.jpg" alt=""></li>
+            <li><img src="./images/57.jpg" alt=""></li>
+            </div>
+            <div class="arrow_left">
+                <a href="javascript:;" class="arrow_left"><</a>
+            </div>
+            <div class="arrow_right">
+                <a href="javascript:;" class="arrow_right">></a>
+            </div>
+        </section>
+
+        <!-- 运动、智能手表 -->
+        <section class="Com clear_fix">
+            <figcaption>智能表<img src="./images/64_03.gif" alt=""></figcaption>
+            <div class="Com_left"><img src="./images/59.jpg" alt=""></div>
+            <div class="Com_right">
+            <li><img src="./images/60.jpg" alt=""></li>
+            <li><img src="./images/61.jpg" alt=""></li>
+            <li><img src="./images/62.jpg" alt=""></li>
+            <li><img src="./images/63.jpg" alt=""></li>
+            </div>
+            <div class="arrow_left">
+                <a href="javascript:;" class="arrow_left"><</a>
+            </div>
+            <div class="arrow_right">
+                <a href="javascript:;" class="arrow_right">></a>
+            </div>
+        </section>
+
+        <!-- 品牌馆 -->
+        <section class="brand">
+            <!-- 上 -->
+            <figcaption>
+            <span>品牌馆</span>
+            <ul>
+              <li><img src="./images/65_03.gif" alt=""></li>
+              <li>顶级</li>
+              <li>奢华</li>
+              <li>轻奢</li>
+              <li>时尚</li>
+            </ul>
+            <a href="javascript">查看更多></a>
+            </figcaption>
+            <!-- 中 -->
+            <article>
+                <div class="brand_pic"><img src="./images/66.jpg" alt=""><figure class="Pop-up"><img src="./images/70.jpg" alt=""></figure></div>
+                <div class="brand_pic"><img src="./images/67.jpg" alt=""><figure class="Pop-up"><img src="./images/71.jpg" alt=""></figure></div>
+                <div class="brand_pic"><img src="./images/68.jpg" alt=""><figure class="Pop-up"><img src="./images/72.jpg" alt=""></figure></div>
+                <div class="brand_pic"><img src="./images/69.jpg" alt=""><figure class="Pop-up"><img src="./images/73.jpg" alt=""></figure></div>
+            </article>
+            <!-- 下 -->
+            <ul class="brand_logo">
+                <li><img src="./images/74.jpg" alt=""><p>百达翡丽</p></li>
+                <li><img src="./images/74.jpg" alt=""><p>百达翡丽</p></li>
+                <li><img src="./images/74.jpg" alt=""><p>百达翡丽</p></li>
+                <li><img src="./images/74.jpg" alt=""><p>百达翡丽</p></li>
+                <li><img src="./images/74.jpg" alt=""><p>百达翡丽</p></li>
+                <li><img src="./images/74.jpg" alt=""><p>百达翡丽</p></li>
+            </ul>
+        </section>
+
+        <!-- 排名榜 -->
+         <section class="brand ranking">
+            <!-- 上 -->
+            <figcaption>
+            <span>排名版</span>
+            <ul>
+              <li><img src="./images/75_03.gif" alt=""></li>
+              <li>女表</li>
+              <li>潮表</li>
+            </ul>
+            <a href="javascript">查看更多></a>
+            </figcaption>
+            <!-- 下 -->
+            <div class="ranking_left"><img src="./images/76.jpg" alt=""></div>
+            <div class="ranking_con"><img src="./images/78_03.gif" alt=""></div>
+            <div class="ranking_right">
+            <li><span>NO.2</span><img src="./images/79.jpg" alt="">
+            <dl><dt>万国&nbsp;&nbsp;飞行员系列</dt><dd><span>¥39800</span>/<i>销量201</i></dd></dl>
+            </li>
+            <li><span>NO.3</span><img src="./images/80.jpg" alt="">
+             <dl><dt>万国&nbsp;&nbsp;飞行员系列</dt><dd><span>¥39800</span>/<i>销量201</i></dd></dl>
+            </li>
+            <li><span>NO.4</span><img src="./images/81.jpg" alt="">
+             <dl><dt>万国&nbsp;&nbsp;飞行员系列</dt><dd><span>¥39800</span>/<i>销量201</i></dd></dl>
+            </li>
+            <li><span>NO.5</span><img src="./images/82.jpg" alt="">
+             <dl><dt>万国&nbsp;&nbsp;飞行员系列</dt><dd><span>¥39800</span>/<i>销量201</i></dd></dl>
+            </li>
+            </div>
+        </section>
+
+        <!-- 共赢合作 -->
+        <section class="win">
+            <figcaption>合作共享</figcaption>
+            <div class="win_con">
+                <li>
+                <img src="./images/83.jpg" alt="">
+                <dl>
+                  <dt>品牌商合作</dt>
+                  <dd>专业手表品牌运营团队，高效率品牌传播</dd>
+                </dl>
+                </li>
+
+                <li>
+                <img src="./images/84.png" alt="">
+                <dl>
+                  <dt>品牌商合作</dt>
+                  <dd>专业手表品牌运营团队，高效率品牌传播</dd>
+                </dl>
+                </li>
+
+                <li>
+                <img src="./images/85.jpg" alt="">
+                <dl>
+                  <dt>品牌商合作</dt>
+                  <dd>专业手表品牌运营团队，高效率品牌传播</dd>
+                </dl>
+                </li>
+
+                <li>
+                <img src="./images/86.jpg" alt="">
+                <dl>
+                  <dt>品牌商合作</dt>
+                  <dd>专业手表品牌运营团队，高效率品牌传播</dd>
+                </dl>
+                </li>
+            </div>
+        </section>
+    </div>
+</main>
+<!-- 尾部 -->
+<footer></footer>
+
+	</section>
+</body>
+<script src="./bootstrap/jquery-1.11.1.min.js"></script>
+<script src="./bootstrap/js/bootstrap.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/index.js"></script>
+</html>
